@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "basicTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [ViewController new];
+    self.window.rootViewController = [basicTabBarController new];
     [self.window makeKeyAndVisible];
     return YES;
 }
