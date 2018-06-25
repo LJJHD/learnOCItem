@@ -79,6 +79,30 @@
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reserverNotification:) name:@"test0" object:nil];
     //4、是否需要移除通知 ios 9 之后不需要手动在dealloc方法中移除通知
+    
+    
+    for (int i = 0; i <= 10000000000000000000; i++) {
+//        @autoreleasepool{
+            NSArray *arr1 = [NSArray array];
+            NSArray *arr2 = [NSArray array];
+            NSArray *arr3 = [NSArray array];
+            NSArray *arr4 = [NSArray array];
+            NSArray *arr5 = [NSArray array];
+            NSArray *arr6 = [NSArray array];
+            NSArray *arr7 = [NSArray array];
+            NSArray *arr8 = [NSArray array];
+            NSArray *arr9 = [NSArray array];
+            NSArray *arr10 = [NSArray array];
+            NSArray *arr11 = [NSArray array];
+            NSArray *arr12 = [NSArray array];
+            NSArray *arr123 = [NSArray array];
+            
+            NSArray *arr14 = [NSArray array];
+            NSArray *arr15 = [NSArray array];
+            NSArray *arr16 = [NSArray array];
+//        }
+//        NSLog(@"%@",arr);
+    }
 }
 
 -(void)reserverNotification:(NSNotification *)notification{
@@ -96,8 +120,6 @@
         //dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL) 获取当前队列的标签.返回已经创建队列的指定标签。如果队列在创建过程中没有提供标签，则可能返回NULL。
         //strcmp() 比较字符串是否相等
         //在主线程的主队列
-        
-        
     }else{
         
     }

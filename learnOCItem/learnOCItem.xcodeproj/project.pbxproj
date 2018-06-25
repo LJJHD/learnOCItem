@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B28111A720DA1DD200D149F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28111A620DA1DD200D149F8 /* AppDelegate.m */; };
-		B28111AA20DA1DD200D149F8 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28111A920DA1DD200D149F8 /* KVOViewController.m */; };
 		B28111AD20DA1DD200D149F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28111AB20DA1DD200D149F8 /* Main.storyboard */; };
 		B28111AF20DA1DD300D149F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28111AE20DA1DD300D149F8 /* Assets.xcassets */; };
 		B28111B220DA1DD300D149F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28111B020DA1DD300D149F8 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,19 @@
 		B28111CA20DA1DD300D149F8 /* learnOCItemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B28111C920DA1DD300D149F8 /* learnOCItemUITests.m */; };
 		B28111DD20DA36C900D149F8 /* basicTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28111DC20DA36C900D149F8 /* basicTabBarController.m */; };
 		B28111E120DA3B8B00D149F8 /* UIKitListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28111E020DA3B8B00D149F8 /* UIKitListTableViewController.m */; };
+		B2A0CAC720DB801C0001AAC8 /* YBNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CAC320DB801C0001AAC8 /* YBNotification.m */; };
+		B2A0CAC820DB801C0001AAC8 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CAC420DB801C0001AAC8 /* KVOViewController.m */; };
+		B2A0CACD20DB8B000001AAC8 /* ResponseChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CACB20DB8B000001AAC8 /* ResponseChainViewController.m */; };
+		B2A0CACE20DB8B000001AAC8 /* ResponseChainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A0CACC20DB8B000001AAC8 /* ResponseChainViewController.xib */; };
+		B2A0CAD120DB8CE60001AAC8 /* responseView1.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CAD020DB8CE60001AAC8 /* responseView1.m */; };
+		B2A0CAD420DB8CFA0001AAC8 /* responseView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CAD320DB8CFA0001AAC8 /* responseView2.m */; };
+		B2A0CAD720DB8D040001AAC8 /* responseView3.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0CAD620DB8D040001AAC8 /* responseView3.m */; };
+		B2EEBCBD20DCD5E300BFEC4C /* filePath.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EEBCBC20DCD5E300BFEC4C /* filePath.m */; };
+		B2EEBCC020DCE27B00BFEC4C /* FundationListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EEBCBF20DCE27B00BFEC4C /* FundationListTableViewController.m */; };
+		B2EEBCC420DCE84100BFEC4C /* FileMananerHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EEBCC220DCE84100BFEC4C /* FileMananerHandleViewController.m */; };
+		B2EEBCC520DCE84100BFEC4C /* FileMananerHandleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EEBCC320DCE84100BFEC4C /* FileMananerHandleViewController.xib */; };
+		B2EEBCC720DCF25300BFEC4C /* ceishi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2EEBCC620DCF25300BFEC4C /* ceishi.plist */; };
+		B2EEBCC820DCF25300BFEC4C /* ceishi.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2EEBCC620DCF25300BFEC4C /* ceishi.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +52,6 @@
 		B28111A220DA1DD200D149F8 /* learnOCItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnOCItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28111A520DA1DD200D149F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B28111A620DA1DD200D149F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B28111A820DA1DD200D149F8 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
-		B28111A920DA1DD200D149F8 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		B28111AC20DA1DD200D149F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B28111AE20DA1DD300D149F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B28111B120DA1DD300D149F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +67,27 @@
 		B28111DC20DA36C900D149F8 /* basicTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = basicTabBarController.m; sourceTree = "<group>"; };
 		B28111DF20DA3B8B00D149F8 /* UIKitListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitListTableViewController.h; sourceTree = "<group>"; };
 		B28111E020DA3B8B00D149F8 /* UIKitListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitListTableViewController.m; sourceTree = "<group>"; };
+		B2A0CAC320DB801C0001AAC8 /* YBNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNotification.m; sourceTree = "<group>"; };
+		B2A0CAC420DB801C0001AAC8 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		B2A0CAC520DB801C0001AAC8 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		B2A0CAC620DB801C0001AAC8 /* YBNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNotification.h; sourceTree = "<group>"; };
+		B2A0CACA20DB8B000001AAC8 /* ResponseChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseChainViewController.h; sourceTree = "<group>"; };
+		B2A0CACB20DB8B000001AAC8 /* ResponseChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseChainViewController.m; sourceTree = "<group>"; };
+		B2A0CACC20DB8B000001AAC8 /* ResponseChainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResponseChainViewController.xib; sourceTree = "<group>"; };
+		B2A0CACF20DB8CE60001AAC8 /* responseView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = responseView1.h; sourceTree = "<group>"; };
+		B2A0CAD020DB8CE60001AAC8 /* responseView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responseView1.m; sourceTree = "<group>"; };
+		B2A0CAD220DB8CFA0001AAC8 /* responseView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = responseView2.h; sourceTree = "<group>"; };
+		B2A0CAD320DB8CFA0001AAC8 /* responseView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responseView2.m; sourceTree = "<group>"; };
+		B2A0CAD520DB8D040001AAC8 /* responseView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = responseView3.h; sourceTree = "<group>"; };
+		B2A0CAD620DB8D040001AAC8 /* responseView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responseView3.m; sourceTree = "<group>"; };
+		B2EEBCBB20DCD5E300BFEC4C /* filePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filePath.h; sourceTree = "<group>"; };
+		B2EEBCBC20DCD5E300BFEC4C /* filePath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filePath.m; sourceTree = "<group>"; };
+		B2EEBCBE20DCE27B00BFEC4C /* FundationListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FundationListTableViewController.h; sourceTree = "<group>"; };
+		B2EEBCBF20DCE27B00BFEC4C /* FundationListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FundationListTableViewController.m; sourceTree = "<group>"; };
+		B2EEBCC120DCE84100BFEC4C /* FileMananerHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMananerHandleViewController.h; sourceTree = "<group>"; };
+		B2EEBCC220DCE84100BFEC4C /* FileMananerHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileMananerHandleViewController.m; sourceTree = "<group>"; };
+		B2EEBCC320DCE84100BFEC4C /* FileMananerHandleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileMananerHandleViewController.xib; sourceTree = "<group>"; };
+		B2EEBCC620DCF25300BFEC4C /* ceishi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ceishi.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +138,15 @@
 		B28111A420DA1DD200D149F8 /* learnOCItem */ = {
 			isa = PBXGroup;
 			children = (
+				B2A0CABE20DB7F8D0001AAC8 /* UIKit */,
+				B2A0CABD20DB7F830001AAC8 /* Fundation */,
 				B28111D720DA35B000D149F8 /* RootViewController */,
 				B28111A520DA1DD200D149F8 /* AppDelegate.h */,
 				B28111A620DA1DD200D149F8 /* AppDelegate.m */,
-				B28111A820DA1DD200D149F8 /* KVOViewController.h */,
-				B28111A920DA1DD200D149F8 /* KVOViewController.m */,
 				B28111DF20DA3B8B00D149F8 /* UIKitListTableViewController.h */,
 				B28111E020DA3B8B00D149F8 /* UIKitListTableViewController.m */,
+				B2EEBCBE20DCE27B00BFEC4C /* FundationListTableViewController.h */,
+				B2EEBCBF20DCE27B00BFEC4C /* FundationListTableViewController.m */,
 				B28111AB20DA1DD200D149F8 /* Main.storyboard */,
 				B28111AE20DA1DD300D149F8 /* Assets.xcassets */,
 				B28111B020DA1DD300D149F8 /* LaunchScreen.storyboard */,
@@ -128,6 +161,7 @@
 			children = (
 				B28111BE20DA1DD300D149F8 /* learnOCItemTests.m */,
 				B28111C020DA1DD300D149F8 /* Info.plist */,
+				B2EEBCC620DCF25300BFEC4C /* ceishi.plist */,
 			);
 			path = learnOCItemTests;
 			sourceTree = "<group>";
@@ -148,6 +182,62 @@
 				B28111DC20DA36C900D149F8 /* basicTabBarController.m */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		B2A0CABD20DB7F830001AAC8 /* Fundation */ = {
+			isa = PBXGroup;
+			children = (
+				B2EEBCBA20DCD58800BFEC4C /* store */,
+			);
+			path = Fundation;
+			sourceTree = "<group>";
+		};
+		B2A0CABE20DB7F8D0001AAC8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B2A0CAC920DB8AE50001AAC8 /* responderChain */,
+				B2A0CAC220DB801C0001AAC8 /* KVO */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B2A0CAC220DB801C0001AAC8 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				B2A0CAC620DB801C0001AAC8 /* YBNotification.h */,
+				B2A0CAC320DB801C0001AAC8 /* YBNotification.m */,
+				B2A0CAC520DB801C0001AAC8 /* KVOViewController.h */,
+				B2A0CAC420DB801C0001AAC8 /* KVOViewController.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		B2A0CAC920DB8AE50001AAC8 /* responderChain */ = {
+			isa = PBXGroup;
+			children = (
+				B2A0CACA20DB8B000001AAC8 /* ResponseChainViewController.h */,
+				B2A0CACB20DB8B000001AAC8 /* ResponseChainViewController.m */,
+				B2A0CACC20DB8B000001AAC8 /* ResponseChainViewController.xib */,
+				B2A0CACF20DB8CE60001AAC8 /* responseView1.h */,
+				B2A0CAD020DB8CE60001AAC8 /* responseView1.m */,
+				B2A0CAD220DB8CFA0001AAC8 /* responseView2.h */,
+				B2A0CAD320DB8CFA0001AAC8 /* responseView2.m */,
+				B2A0CAD520DB8D040001AAC8 /* responseView3.h */,
+				B2A0CAD620DB8D040001AAC8 /* responseView3.m */,
+			);
+			path = responderChain;
+			sourceTree = "<group>";
+		};
+		B2EEBCBA20DCD58800BFEC4C /* store */ = {
+			isa = PBXGroup;
+			children = (
+				B2EEBCBB20DCD5E300BFEC4C /* filePath.h */,
+				B2EEBCBC20DCD5E300BFEC4C /* filePath.m */,
+				B2EEBCC120DCE84100BFEC4C /* FileMananerHandleViewController.h */,
+				B2EEBCC220DCE84100BFEC4C /* FileMananerHandleViewController.m */,
+				B2EEBCC320DCE84100BFEC4C /* FileMananerHandleViewController.xib */,
+			);
+			path = store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +344,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28111B220DA1DD300D149F8 /* LaunchScreen.storyboard in Resources */,
+				B2A0CACE20DB8B000001AAC8 /* ResponseChainViewController.xib in Resources */,
+				B2EEBCC520DCE84100BFEC4C /* FileMananerHandleViewController.xib in Resources */,
 				B28111AF20DA1DD300D149F8 /* Assets.xcassets in Resources */,
 				B28111AD20DA1DD200D149F8 /* Main.storyboard in Resources */,
+				B2EEBCC720DCF25300BFEC4C /* ceishi.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EEBCC820DCF25300BFEC4C /* ceishi.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +374,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EEBCC020DCE27B00BFEC4C /* FundationListTableViewController.m in Sources */,
+				B2A0CAD420DB8CFA0001AAC8 /* responseView2.m in Sources */,
 				B28111E120DA3B8B00D149F8 /* UIKitListTableViewController.m in Sources */,
 				B28111DD20DA36C900D149F8 /* basicTabBarController.m in Sources */,
-				B28111AA20DA1DD200D149F8 /* KVOViewController.m in Sources */,
+				B2EEBCBD20DCD5E300BFEC4C /* filePath.m in Sources */,
 				B28111B520DA1DD300D149F8 /* main.m in Sources */,
+				B2A0CACD20DB8B000001AAC8 /* ResponseChainViewController.m in Sources */,
+				B2EEBCC420DCE84100BFEC4C /* FileMananerHandleViewController.m in Sources */,
+				B2A0CAD720DB8D040001AAC8 /* responseView3.m in Sources */,
 				B28111A720DA1DD200D149F8 /* AppDelegate.m in Sources */,
+				B2A0CAD120DB8CE60001AAC8 /* responseView1.m in Sources */,
+				B2A0CAC720DB801C0001AAC8 /* YBNotification.m in Sources */,
+				B2A0CAC820DB801C0001AAC8 /* KVOViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "basicTabBarController.h"
 #import "UIKitListTableViewController.h"
+#import "FundationListTableViewController.h"
 @interface basicTabBarController ()
 
 @end
@@ -19,6 +20,9 @@
     // Do any additional setup after loading the view.
     UINavigationController *UIKitListNav = [[UINavigationController alloc]initWithRootViewController:[[UIKitListTableViewController alloc]init]];
     [self setupOneChildVC:UIKitListNav title:@"UIKit" imageName:@"icon_findmoren" selectedImageName:@"discover"];
+    
+    UINavigationController *foundationNav = [[UINavigationController alloc]initWithRootViewController:[[FundationListTableViewController alloc]init]];
+    [self setupOneChildVC:foundationNav title:@"Fundtion" imageName:@"" selectedImageName:@""];
 }
 - (void)setupOneChildVC:(UIViewController *)child title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
