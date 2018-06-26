@@ -8,6 +8,7 @@
 
 #import "FundationListTableViewController.h"
 #import "FileMananerHandleViewController.h"
+#import "FMDBLearnViewController.h"
 static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 @interface FundationListTableViewController ()
 @property (nonatomic, strong) NSArray *vcArr;
@@ -19,7 +20,7 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"foundtion";
-    self.vcArr = @[@"filemanagerHanle"];
+    self.vcArr = @[@"filemanagerHanle",@"fmdb"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentyfiy];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -60,7 +61,12 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
             [self.navigationController pushViewController:kvo animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            FMDBLearnViewController *kvo = [[FMDBLearnViewController alloc]init];
+            [self.navigationController pushViewController:kvo animated:YES];
+        }
+            break;
         default:
             break;
     }
