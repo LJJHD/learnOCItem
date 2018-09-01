@@ -18,6 +18,12 @@ static NSString * const testPath = @"testPath";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    id obj = [[NSObject alloc]init];
+    void *p = (__bridge void *)(obj);
+    
+    id o = (__bridge id)(p);
+    
     self.navigationItem.title = @"fileManagerHandle";
     NSString *Documentpath =  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSLog(@"Documentpath===%@",Documentpath);
@@ -85,7 +91,35 @@ static NSString * const testPath = @"testPath";
     NSString *unarchiverStr = [NSKeyedUnarchiver unarchiveObjectWithFile:ceishiPath];
     
 }
+//递归删除某个路径下的所有文件.
 
++ (void) deleteFile:(NSString *)path{
+    //1、判断是文件还是目录
+    NSFileManager * fileManage = [NSFileManager defaultManager];
+    BOOL isDir = NO;
+    BOOL isExist = [fileManage fileExistsAtPath:path isDirectory:&isDir];
+    if (isExist) {
+        //2、判断是否是目录
+        if (isDir) {
+            //是目录
+            NSArray * dirArray = [fileManage contentsOfDirectoryAtPath:path error:nil];
+            NSString * subPath = nil;
+            for (NSString * str in dirArray) {
+                subPath = [path stringByAppendingPathComponent:str];
+                BOOL issubDir = NO;
+                [fileManage fileExistsAtPath:subPath isDirectory:&issubDir];
+                if (issubDir) {
+                    [self deleteFile:subPath];
+                }
+            }
+        } else {
+            [fileManage removeItemAtPath:path error:nil];
+        }
+    } else {
+        
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

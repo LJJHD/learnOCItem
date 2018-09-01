@@ -9,6 +9,7 @@
 #import "basicTabBarController.h"
 #import "UIKitListTableViewController.h"
 #import "FundationListTableViewController.h"
+#import "MultithreadingViewController.h"
 @interface basicTabBarController ()
 
 @end
@@ -23,6 +24,9 @@
     
     UINavigationController *foundationNav = [[UINavigationController alloc]initWithRootViewController:[[FundationListTableViewController alloc]init]];
     [self setupOneChildVC:foundationNav title:@"Fundtion" imageName:@"" selectedImageName:@""];
+    
+    UINavigationController *threadingNav = [[UINavigationController alloc]initWithRootViewController:[[MultithreadingViewController alloc]init]];
+    [self setupOneChildVC:threadingNav title:@"multithreading" imageName:@"" selectedImageName:@""];
 }
 - (void)setupOneChildVC:(UIViewController *)child title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {

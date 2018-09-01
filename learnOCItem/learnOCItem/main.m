@@ -11,6 +11,11 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        
+//        id __strong objc = [[NSObject alloc]init];
+//        id __autoreleasing o = objc;
+//        NSLog(@"retain count == %ld",CFGetRetainCount((__bridge CFTypeRef)(objc)));
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

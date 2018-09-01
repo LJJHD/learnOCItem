@@ -9,10 +9,15 @@
 #import "FundationListTableViewController.h"
 #import "FileMananerHandleViewController.h"
 #import "FMDBLearnViewController.h"
+#import "CustomObjectCopyViewController.h"
+#import "MemoryManageViewController.h"
+#import "BlockViewController.h"
+#import "KVCViewController.h"
 static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 @interface FundationListTableViewController ()
 @property (nonatomic, strong) NSArray *vcArr;
-
+@property (nonatomic, copy) NSArray *testArr;
+@property (nonatomic, copy) NSString *str;
 @end
 
 @implementation FundationListTableViewController
@@ -20,18 +25,37 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"foundtion";
-    self.vcArr = @[@"filemanagerHanle",@"fmdb"];
+    self.vcArr = @[@"filemanagerHanle",@"fmdb",@"customOBJCopy",@"memoryManager",@"BlockViewController",@"kvcVC"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentyfiy];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//   NSKeyValueCoding
+    NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"123",@"4455", nil];
+
+    [self setValue:@"123" forKey:@"str"];
+}
+
+-(void)setStr:(NSString *)str{
+    
+    _str = str;
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+//    NSLog(@"self.view.safeAreaInsets3===%@",NSStringFromUIEdgeInsets(self.view.safeAreaInsets));
+    
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+//       NSLog(@"self.view.safeAreaInsets2===%@",NSStringFromUIEdgeInsets(self.view.safeAreaInsets));
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
 #pragma mark - Table view data source
@@ -67,9 +91,32 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
             [self.navigationController pushViewController:kvo animated:YES];
         }
             break;
+        case 2:
+        {
+            CustomObjectCopyViewController *kvo = [[CustomObjectCopyViewController alloc]init];
+            [self.navigationController pushViewController:kvo animated:YES];
+        }
+            break;
+        case 3:
+        {
+            MemoryManageViewController *memoryManager = [[MemoryManageViewController alloc]init];
+            [self.navigationController pushViewController:memoryManager animated:YES];
+        }
+            break;
+        case 4:{
+            BlockViewController *blockVC = [[BlockViewController alloc]init];
+            [self.navigationController pushViewController:blockVC animated:YES];
+        }
+        case 5:{
+            KVCViewController *kvc = [[KVCViewController alloc]init];
+            [self.navigationController pushViewController:kvc animated:YES];
+        }
         default:
             break;
     }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 44;
 }
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
