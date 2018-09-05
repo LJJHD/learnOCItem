@@ -32,6 +32,10 @@ static NSString * const reCell = @"ImageTableViewCell";
     }
     self.tableView.rowHeight = 100;
     [self.tableView registerNib:[UINib nibWithNibName:reCell bundle:nil] forCellReuseIdentifier:reCell];
+    [self performSelector:@selector(test) withObject:self afterDelay:5.f];
+}
+-(void)test{
+    NSLog(@"延迟执行");
 }
 
 - (void)didReceiveMemoryWarning {

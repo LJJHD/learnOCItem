@@ -10,16 +10,21 @@
 #import "GCDPracticeViewController.h"
 #import "OperationViewController.h"
 #import "LockViewController.h"
+#import "RunLoopViewController.h"
 @interface MultithreadingViewController ()
-
+@property (nonatomic, strong) NSThread *thread;
 @end
 
 @implementation MultithreadingViewController
-
+-(void)dealloc{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
 }
+
 - (IBAction)jumpGCD:(UIButton *)sender {
     GCDPracticeViewController *vc = [[GCDPracticeViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
@@ -28,9 +33,15 @@
     OperationViewController *vc = [[OperationViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 - (IBAction)lock:(UIButton *)sender {
     LockViewController *lockVC = [[LockViewController alloc]init];
     [self.navigationController pushViewController:lockVC animated:YES];
+}
+
+- (IBAction)runloop:(UIButton *)sender {
+    RunLoopViewController *runloopVC = [[RunLoopViewController alloc]init];
+    [self.navigationController pushViewController:runloopVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

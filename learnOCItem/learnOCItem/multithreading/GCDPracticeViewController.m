@@ -52,8 +52,7 @@
 //    [self groupEnterAndLeave];
 //    [self semaphoreSync];
     
-    
-   
+  
 }
 
 
@@ -218,6 +217,21 @@
     NSLog(@"semaphore -- end,number =%zd",number);
 }
 
+/**
+ 线程死锁
+ */
+-(void)threadLock{
+    dispatch_queue_t queue = dispatch_queue_create("www.", DISPATCH_QUEUE_SERIAL);
+    NSLog(@"==========1");
+    dispatch_async(queue, ^{
+        NSLog(@"===========2");
+        dispatch_sync(queue, ^{
+            NSLog(@"===========3");
+        });
+        NSLog(@"===========4");
+    });
+    NSLog(@"===========5");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

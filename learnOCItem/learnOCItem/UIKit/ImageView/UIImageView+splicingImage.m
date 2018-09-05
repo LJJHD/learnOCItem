@@ -28,7 +28,7 @@
         });
         __weak  typeof(self)weakSelf = self;
         dispatch_group_notify(group_t, queue, ^{
-            NSThread
+            
             composeImg = [weakSelf imageCompose:[imgs copy] size:size cornerRadius:cornerRadius];
             dispatch_async(dispatch_get_main_queue(), ^{
                  composeImage(composeImg);
