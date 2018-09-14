@@ -35,10 +35,11 @@
 //    NSMutableArray *resultArr =  [Arithmetic bubbleSort:arr ascending:NO];
     //选择排序
 //    NSMutableArray *resultArr =  [Arithmetic selectSort:arr ascending:YES];
-//   [Arithmetic quickSort:arr left:0 right:arr.count - 1];
-//    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        NSLog(@"obj===%@",obj);
-//    }];
+   [Arithmetic quickSort:arr left:0 right:arr.count - 1];
+    [arr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"obj===%@",obj);
+    }];
+    
 //    SEL sel = @selector(text);
 //    NSLog(@"反转字符串===%@",[Arithmetic reverseString:@"123456"]);
 //    [Arithmetic insertSortArray:arr];

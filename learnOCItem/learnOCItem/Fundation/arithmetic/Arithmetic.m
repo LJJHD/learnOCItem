@@ -12,7 +12,7 @@
 +(NSMutableArray *)bubbleSort:(NSMutableArray *)arr ascending:(BOOL)ascending{
     NSMutableArray *resultArr = [arr mutableCopy];
     for (int i = 0; i < resultArr.count; i++) {
-        
+        //i 是第几次排，每一次排序都能得到目标数
         for (int j = 0; j < resultArr.count - 1 -  i; j++) {
             
             if (ascending) {
@@ -40,6 +40,9 @@
 
 //选择排序
 +(NSMutableArray *)selectSort:(NSMutableArray *)arr ascending:(BOOL)ascending{
+    if (!arr) {
+        return nil;
+    }
     for (int i = 0; i < arr.count; i ++) {
         for (int j = i + 1; j < arr.count; j ++) {
             if (ascending) {
@@ -58,40 +61,54 @@
 }
 
 //快速排序
-
+//@"1",@"88",@"12",@"30",@"7",@"15",@"10",@"1",@"157",@"30"
 + (void)quickSort:(NSMutableArray *)array left:(NSInteger)left right:(NSInteger)right
 {
     if(left < right){
         NSInteger l = left;
-        NSInteger h = right;
-        NSInteger base = [array[l] integerValue];
+        NSInteger R = right;
+        NSInteger base = [array[left] integerValue];
         
-        while(l<h){
-            //右-->左，查找小于base的数
-            while(l<h && [array[h] integerValue]>= base){
-                h--;
+        while(l<R){
+            //右-->左，查找小于base的数停下来
+            while(l<R && [array[R] integerValue]>= base){
+                R--;
             }
-            //左-->右，查找大于base的数
-            while (l<h && [array[l] integerValue] <= base){
+            //左-->右，查找大于base的数停下来
+            while (l<R && [array[l] integerValue] <= base){
                 l++;
             }
             
-            if(l<h){
-                [array exchangeObjectAtIndex:l withObjectAtIndex:h];
-               -- h  ;
+            if(l<R){
+                [array exchangeObjectAtIndex:l withObjectAtIndex:R];
+               -- R  ;
                ++ l  ;
             }
             NSLog(@"排序中：%@",[array componentsJoinedByString:@","]);
         }
-        //当l和h相遇时
-        [array exchangeObjectAtIndex:left withObjectAtIndex:h];
+        //当l和r相遇时
+        [array exchangeObjectAtIndex:left withObjectAtIndex:R];
         //左边
-        [self quickSort:array left:0 right:h - 1];
+        [self quickSort:array left:0 right:R - 1];
         //右边
-        [self quickSort:array left:h + 1 right:right];
+        [self quickSort:array left:R + 1 right:right];
     }
 }
+//两分排序
 
+
+//桶排序
+
+/**
+ 桶排序到底要多少个桶，由给定数的最大数决定，桶要比最大数多
+
+ @param arr <#arr description#>
+ @param ascending <#ascending description#>
+ */
+-(void)bucketSort:(NSMutableArray*)arr isAscending:(BOOL)ascending{
+    NSMutableArray *saveArr = [NSMutableArray array];
+    
+}
 
 +(void)printArray:(NSMutableArray *)arr{
     NSLog(@"排序完：%@\n",[arr componentsJoinedByString:@","]);

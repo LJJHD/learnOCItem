@@ -10,6 +10,7 @@
 #import "KVOViewController.h"
 #import "ScrollViewController.h"
 #import "ComposeImageTableViewController.h"
+#import "ReactCocoaViewController.h"
 static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 @interface UIKitListTableViewController ()
 @property (nonatomic, strong) NSArray *vcArr;
@@ -19,7 +20,7 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.vcArr = @[@"KVO",@"ScrollViewController",@"ComposeImageTableViewController"];
+    self.vcArr = @[@"KVO",@"ScrollViewController",@"ComposeImageTableViewController",@"reactCocoa"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentyfiy];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -70,6 +71,13 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
             case 2:
         {
             ComposeImageTableViewController *vc = [[ComposeImageTableViewController alloc]init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 3:
+        {
+            ReactCocoaViewController *vc = [[ReactCocoaViewController alloc]init];
             vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }

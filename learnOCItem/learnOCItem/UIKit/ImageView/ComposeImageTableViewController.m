@@ -27,12 +27,18 @@ static NSString * const reCell = @"ImageTableViewCell";
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _dataArr = [NSMutableArray array];
-    for (int i = 1; i<= 3; i++) {
-        [self.dataArr addObject:[[ImageModel alloc]init]];
-    }
+    [self.dataArr addObject:@"http://cdn2.179e.com/1526896080223155.jpg"];
+    [self.dataArr addObject:@"http://cdn2.179e.com/1518011612"];
+    [self.dataArr addObject:@"http://cdn2.179e.com/1509066600358890.jpg"];
+    [self.dataArr addObject:@"http://cdn2.179e.com/1510217820215097.jpg"];
+
+    
+//    for (int i = 1; i<= 3; i++) {
+//        [self.dataArr addObject:[[ImageModel alloc]init]];
+//    }
     self.tableView.rowHeight = 100;
     [self.tableView registerNib:[UINib nibWithNibName:reCell bundle:nil] forCellReuseIdentifier:reCell];
-    [self performSelector:@selector(test) withObject:self afterDelay:5.f];
+//    [self performSelector:@selector(test) withObject:self afterDelay:5.f];
 }
 -(void)test{
     NSLog(@"延迟执行");
@@ -60,10 +66,11 @@ static NSString * const reCell = @"ImageTableViewCell";
     ImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reCell forIndexPath:indexPath];
     
     // Configure the cell...
-    ImageModel *model = self.dataArr[indexPath.row];
-    [model img:^(UIImage *img) {
-        cell.img.image = img;
-    }];
+//    ImageModel *model = self.dataArr[indexPath.row];
+//    [model img:^(UIImage *img) {
+//        cell.img.image = img;
+//    }];
+    cell.url = self.dataArr[indexPath.row];
     return cell;
 }
 

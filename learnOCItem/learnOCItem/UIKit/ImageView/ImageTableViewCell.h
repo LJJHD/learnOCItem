@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface ImageTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *img;
-
+@property (nonatomic, copy) NSString *url;
 @end

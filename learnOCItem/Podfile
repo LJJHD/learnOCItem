@@ -8,6 +8,8 @@ target 'learnOCItem' do
   # Pods for learnOCItem
   pod 'FMDB', '~> 2.7.2'
   pod 'Masonry'
+  pod 'ReactiveCocoa', '2.5'
+  pod 'SDWebImage', '~> 4.3.3'
   target 'learnOCItemTests' do
     inherit! :search_paths
     # Pods for testing

@@ -14,7 +14,10 @@
     [super awakeFromNib];
     // Initialization code
 }
-
+-(void)setUrl:(NSString *)url{
+    _url = url;
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"user"]];
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

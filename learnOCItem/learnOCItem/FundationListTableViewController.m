@@ -13,6 +13,7 @@
 #import "MemoryManageViewController.h"
 #import "BlockViewController.h"
 #import "KVCViewController.h"
+#import "PresenViewController.h"
 static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 @interface FundationListTableViewController ()
 @property (nonatomic, strong) NSArray *vcArr;
@@ -25,7 +26,7 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"foundtion";
-    self.vcArr = @[@"filemanagerHanle",@"fmdb",@"customOBJCopy",@"memoryManager",@"BlockViewController",@"kvcVC"];
+    self.vcArr = @[@"filemanagerHanle",@"fmdb",@"customOBJCopy",@"memoryManager",@"BlockViewController",@"kvcVC",@"category"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentyfiy];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -107,10 +108,17 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
             BlockViewController *blockVC = [[BlockViewController alloc]init];
             [self.navigationController pushViewController:blockVC animated:YES];
         }
+            break;
         case 5:{
             KVCViewController *kvc = [[KVCViewController alloc]init];
             [self.navigationController pushViewController:kvc animated:YES];
         }
+            break;
+        case 6:{
+            PresenViewController *kvc = [[PresenViewController alloc]init];
+            [self.navigationController pushViewController:kvc animated:YES];
+        }
+            break;
         default:
             break;
     }
