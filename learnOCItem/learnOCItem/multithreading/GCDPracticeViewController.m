@@ -43,15 +43,16 @@
     });
     
 //    dispatch_sync(dispatch_get_main_queue(), ^{
-//       //同步任务 + 主队列
+//       //同步任务 + 主队列 会出现线程锁死
 //    });
+    
     //GCD 栅栏
 //    [self barrier];
 //    [self after];
 //    [self group];
 //    [self groupEnterAndLeave];
-//    [self semaphoreSync];
-    
+    [self semaphoreSync];
+    NSLog(@"主线程执行=============");
   
 }
 
@@ -100,7 +101,15 @@
             NSLog(@"2---%@",[NSThread currentThread]);      // 打印当前线程
         }
     });
-    
+    //dispatch_barrier_async 异步执行
+    dispatch_barrier_async(queue, ^{
+        // 追加任务 barrier
+        for (int i = 0; i < 2; ++i) {
+            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
+            NSLog(@"barrier---%@",[NSThread currentThread]);// 打印当前线程
+        }
+    });
+    //dispatch_barrier_sync同步执行会造成线程阻塞
     dispatch_barrier_sync(queue, ^{
         // 追加任务 barrier
         for (int i = 0; i < 2; ++i) {
@@ -108,7 +117,6 @@
             NSLog(@"barrier---%@",[NSThread currentThread]);// 打印当前线程
         }
     });
-    
     dispatch_async(queue, ^{
         // 追加任务3
         for (int i = 0; i < 2; ++i) {
@@ -128,8 +136,9 @@
         // 2.0秒后异步追加任务代码到主队列，并开始执行
         NSLog(@"after---%@",[NSThread currentThread]);  // 打印当前线程
     });
+    
 }
-
+//快速迭代
 -(void)apply{
     dispatch_queue_t queue = dispatch_queue_create("ljj3", DISPATCH_QUEUE_CONCURRENT);
     dispatch_apply(10, queue, ^(size_t index) {
@@ -162,7 +171,8 @@
         }
         NSLog(@"group---end");
     });
-    
+    //异步执行 先执行
+    NSLog(@"执行====================");
 }
 
 -(void)groupEnterAndLeave{
@@ -213,6 +223,7 @@
         number = 100;
         dispatch_semaphore_signal(semaphore);
     });
+    //堵塞当前线程
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     NSLog(@"semaphore -- end,number =%zd",number);
 }

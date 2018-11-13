@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,6 +52,13 @@
                         <action selector="runloop:" destination="-1" eventType="touchUpInside" id="b3s-Pb-2D6"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPG-cy-uTF">
+                    <rect key="frame" x="155" y="358" width="69" height="30"/>
+                    <state key="normal" title="NSThread"/>
+                    <connections>
+                        <action selector="jumpToNSthread:" destination="-1" eventType="touchUpInside" id="nM1-xm-bGg"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -59,6 +66,7 @@
                 <constraint firstItem="CGy-hA-hLD" firstAttribute="trailing" secondItem="nhf-hR-lRl" secondAttribute="trailing" id="UvQ-6h-DnB"/>
                 <constraint firstItem="CGy-hA-hLD" firstAttribute="top" secondItem="nhf-hR-lRl" secondAttribute="bottom" constant="44" id="ZCa-hc-jtI"/>
                 <constraint firstItem="QoI-hh-Vsb" firstAttribute="trailing" secondItem="nhf-hR-lRl" secondAttribute="trailing" id="c9o-OH-090"/>
+                <constraint firstItem="qPG-cy-uTF" firstAttribute="top" secondItem="obR-tD-Rz8" secondAttribute="bottom" constant="20" id="lgc-jl-gCk"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="nhf-hR-lRl" secondAttribute="trailing" constant="108" id="r7A-pp-XUZ"/>
                 <constraint firstItem="nhf-hR-lRl" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="87" id="rOU-j4-fWp"/>
                 <constraint firstItem="QoI-hh-Vsb" firstAttribute="top" secondItem="CGy-hA-hLD" secondAttribute="bottom" constant="45" id="vuu-DX-Jab"/>

@@ -11,6 +11,7 @@
 #import "OperationViewController.h"
 #import "LockViewController.h"
 #import "RunLoopViewController.h"
+#import "NSThreadViewController.h"
 @interface MultithreadingViewController ()
 @property (nonatomic, strong) NSThread *thread;
 @end
@@ -42,6 +43,10 @@
 - (IBAction)runloop:(UIButton *)sender {
     RunLoopViewController *runloopVC = [[RunLoopViewController alloc]init];
     [self.navigationController pushViewController:runloopVC animated:YES];
+}
+- (IBAction)jumpToNSthread:(UIButton *)sender {
+    NSThreadViewController *vc = [[NSThreadViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

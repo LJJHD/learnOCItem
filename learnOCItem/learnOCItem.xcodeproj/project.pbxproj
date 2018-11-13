@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1547E3219A72DB00FE3E2D /* YSCOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1547E2219A72DB00FE3E2D /* YSCOperation.m */; };
+		0E1547E6219A768700FE3E2D /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1547E5219A768700FE3E2D /* NSThreadViewController.m */; };
 		44FA70539CDB4C18CB7FB4E2 /* libPods-learnOCItem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25985B79CCC73E70C7DA7849 /* libPods-learnOCItem.a */; };
 		7683496CB04F8AE34C8D6407 /* libPods-learnOCItemTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A34F336B3C22BA4BB59416D /* libPods-learnOCItemTests.a */; };
 		B21834A7213CE64400297361 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21834A5213CE64400297361 /* RunLoopViewController.m */; };
@@ -99,6 +101,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1547E1219A72DA00FE3E2D /* YSCOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSCOperation.h; sourceTree = "<group>"; };
+		0E1547E2219A72DB00FE3E2D /* YSCOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSCOperation.m; sourceTree = "<group>"; };
+		0E1547E4219A768700FE3E2D /* NSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		0E1547E5219A768700FE3E2D /* NSThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
 		1A34F336B3C22BA4BB59416D /* libPods-learnOCItemTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learnOCItemTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25985B79CCC73E70C7DA7849 /* libPods-learnOCItem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learnOCItem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B68DDF0F6DC28D5D6C6CA8 /* Pods-learnOCItem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItem.release.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItem/Pods-learnOCItem.release.xcconfig"; sourceTree = "<group>"; };
@@ -296,6 +302,10 @@
 				B2F2E7262138F0F1001E6E60 /* LockViewController.h */,
 				B2F2E7272138F0F1001E6E60 /* LockViewController.m */,
 				B2F2E7282138F0F1001E6E60 /* LockViewController.xib */,
+				0E1547E1219A72DA00FE3E2D /* YSCOperation.h */,
+				0E1547E2219A72DB00FE3E2D /* YSCOperation.m */,
+				0E1547E4219A768700FE3E2D /* NSThreadViewController.h */,
+				0E1547E5219A768700FE3E2D /* NSThreadViewController.m */,
 			);
 			path = multithreading;
 			sourceTree = "<group>";
@@ -837,6 +847,7 @@
 				B286BFB021007BC800B69954 /* MemoryManageViewController.m in Sources */,
 				B2B14E992146492500671C55 /* person.m in Sources */,
 				B2F700B821103B3B00AEC360 /* OperationViewController.m in Sources */,
+				0E1547E3219A72DB00FE3E2D /* YSCOperation.m in Sources */,
 				B29760A72148EF6700923B39 /* Search.m in Sources */,
 				B2FC259920E24199009B859D /* student.m in Sources */,
 				B299DC22212E8D7D009A59C0 /* ImageTableViewCell.m in Sources */,
@@ -848,6 +859,7 @@
 				B29A2EA7211EC5BE0054C28C /* zoology.m in Sources */,
 				B2D571552108493E0083A9A9 /* ScrollViewController.m in Sources */,
 				B29A2EA4211EC16A0054C28C /* Dog.m in Sources */,
+				0E1547E6219A768700FE3E2D /* NSThreadViewController.m in Sources */,
 				B2A6CCCF210723E300ED7B69 /* StuViewController.m in Sources */,
 				B2A0CAC720DB801C0001AAC8 /* YBNotification.m in Sources */,
 				B2FC259620E23CEF009B859D /* baseModel.m in Sources */,

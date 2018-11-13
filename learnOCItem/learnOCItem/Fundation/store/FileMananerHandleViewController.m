@@ -19,12 +19,13 @@ static NSString * const testPath = @"testPath";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    id obj = [[NSObject alloc]init];
-    void *p = (__bridge void *)(obj);
-    
-    id o = (__bridge id)(p);
+//    id obj = [[NSObject alloc]init];
+//    void *p = (__bridge void *)(obj);
+//
+//    id o = (__bridge id)(p);
     
     self.navigationItem.title = @"fileManagerHandle";
+    
     NSString *Documentpath =  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSLog(@"Documentpath===%@",Documentpath);
     NSString *libraryPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
@@ -118,8 +119,8 @@ static NSString * const testPath = @"testPath";
     } else {
         
     }
-    
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

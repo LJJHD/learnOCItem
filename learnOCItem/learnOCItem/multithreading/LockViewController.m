@@ -32,7 +32,7 @@
 //    [self condition2];
     //线程锁死
     [self threadLock];
-    
+    NSConditionLock
 }
 
 /**
@@ -173,7 +173,6 @@
  */
 -(void)recursiveLock{
     NSRecursiveLock *lock = [[NSRecursiveLock alloc] init];
-    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         static void (^RecursiveMethod)(int);
