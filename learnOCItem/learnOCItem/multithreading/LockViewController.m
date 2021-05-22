@@ -32,7 +32,7 @@
 //    [self condition2];
     //线程锁死
     [self threadLock];
-    NSConditionLock
+    
 }
 
 /**

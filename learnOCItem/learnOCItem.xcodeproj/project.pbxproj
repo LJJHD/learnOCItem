@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E1547E3219A72DB00FE3E2D /* YSCOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1547E2219A72DB00FE3E2D /* YSCOperation.m */; };
 		0E1547E6219A768700FE3E2D /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1547E5219A768700FE3E2D /* NSThreadViewController.m */; };
+		41CCE8E32657A7730004854A /* ImageViewStretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CCE8E22657A7730004854A /* ImageViewStretchViewController.m */; };
 		44FA70539CDB4C18CB7FB4E2 /* libPods-learnOCItem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25985B79CCC73E70C7DA7849 /* libPods-learnOCItem.a */; };
 		7683496CB04F8AE34C8D6407 /* libPods-learnOCItemTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A34F336B3C22BA4BB59416D /* libPods-learnOCItemTests.a */; };
 		B21834A7213CE64400297361 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21834A5213CE64400297361 /* RunLoopViewController.m */; };
@@ -109,6 +110,8 @@
 		25985B79CCC73E70C7DA7849 /* libPods-learnOCItem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learnOCItem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38B68DDF0F6DC28D5D6C6CA8 /* Pods-learnOCItem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItem.release.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItem/Pods-learnOCItem.release.xcconfig"; sourceTree = "<group>"; };
 		3DC98C81FBFECD58FD773B6A /* Pods-learnOCItemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItemTests/Pods-learnOCItemTests.release.xcconfig"; sourceTree = "<group>"; };
+		41CCE8E12657A7730004854A /* ImageViewStretchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewStretchViewController.h; sourceTree = "<group>"; };
+		41CCE8E22657A7730004854A /* ImageViewStretchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewStretchViewController.m; sourceTree = "<group>"; };
 		607DFE74C88E28DD7C1C5C44 /* libPods-learnOCItemUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-learnOCItemUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E977488DF1B2D5874FAB7B0 /* Pods-learnOCItem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItem/Pods-learnOCItem.debug.xcconfig"; sourceTree = "<group>"; };
 		AB16E62B29322540D17A4F0B /* Pods-learnOCItemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItemUITests/Pods-learnOCItemUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +325,8 @@
 				B299DC21212E8D7D009A59C0 /* ImageTableViewCell.xib */,
 				B299DC24212E8E8D009A59C0 /* ImageModel.h */,
 				B299DC25212E8E8D009A59C0 /* ImageModel.m */,
+				41CCE8E12657A7730004854A /* ImageViewStretchViewController.h */,
+				41CCE8E22657A7730004854A /* ImageViewStretchViewController.m */,
 			);
 			path = ImageView;
 			sourceTree = "<group>";
@@ -862,6 +867,7 @@
 				0E1547E6219A768700FE3E2D /* NSThreadViewController.m in Sources */,
 				B2A6CCCF210723E300ED7B69 /* StuViewController.m in Sources */,
 				B2A0CAC720DB801C0001AAC8 /* YBNotification.m in Sources */,
+				41CCE8E32657A7730004854A /* ImageViewStretchViewController.m in Sources */,
 				B2FC259620E23CEF009B859D /* baseModel.m in Sources */,
 				B2A6CCCA210723BB00ED7B69 /* BlockViewController.m in Sources */,
 				B25990E4210B16C4008175B8 /* BinaryTreeNode.m in Sources */,
@@ -1037,7 +1043,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9J732K284;
+				DEVELOPMENT_TEAM = KZR83DY963;
 				INFOPLIST_FILE = learnOCItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1055,7 +1061,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E9J732K284;
+				DEVELOPMENT_TEAM = KZR83DY963;
 				INFOPLIST_FILE = learnOCItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
