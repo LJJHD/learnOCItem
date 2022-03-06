@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "basicTabBarController.h"
+#import <TestFramework/TestFramework.h>
 @interface AppDelegate ()
 
 @end
@@ -21,6 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [basicTabBarController new];
     [self.window makeKeyAndVisible];
+    [TestYou test];
+    [NSString test];
 //    UIApplication
     return YES;
 }

@@ -82,6 +82,8 @@
 		B2FC25A020E242A5009B859D /* CustomObjectCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC259E20E242A5009B859D /* CustomObjectCopyViewController.m */; };
 		B2FC25A120E242A5009B859D /* CustomObjectCopyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FC259F20E242A5009B859D /* CustomObjectCopyViewController.xib */; };
 		BCE209F7A00A3412C3DEE164 /* libPods-learnOCItemUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 607DFE74C88E28DD7C1C5C44 /* libPods-learnOCItemUITests.a */; };
+		D7D4689026BFD4440002CAF5 /* OffScreenRenderedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4688F26BFD4440002CAF5 /* OffScreenRenderedViewController.m */; };
+		D7DFCA7A26D1F46300B38244 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DFCA7926D1F46300B38244 /* TestFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +238,9 @@
 		B2FC259D20E242A5009B859D /* CustomObjectCopyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObjectCopyViewController.h; sourceTree = "<group>"; };
 		B2FC259E20E242A5009B859D /* CustomObjectCopyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomObjectCopyViewController.m; sourceTree = "<group>"; };
 		B2FC259F20E242A5009B859D /* CustomObjectCopyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomObjectCopyViewController.xib; sourceTree = "<group>"; };
+		D7D4688E26BFD4440002CAF5 /* OffScreenRenderedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OffScreenRenderedViewController.h; sourceTree = "<group>"; };
+		D7D4688F26BFD4440002CAF5 /* OffScreenRenderedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OffScreenRenderedViewController.m; sourceTree = "<group>"; };
+		D7DFCA7926D1F46300B38244 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework.framework; sourceTree = "<group>"; };
 		D92AA8BAF6BAE1B1A6096245 /* Pods-learnOCItemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learnOCItemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learnOCItemTests/Pods-learnOCItemTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FA70539CDB4C18CB7FB4E2 /* libPods-learnOCItem.a in Frameworks */,
+				D7DFCA7A26D1F46300B38244 /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +400,7 @@
 				B2D5715621084B590083A9A9 /* PrefixHeader.pch */,
 				B28111DF20DA3B8B00D149F8 /* UIKitListTableViewController.h */,
 				B28111E020DA3B8B00D149F8 /* UIKitListTableViewController.m */,
+				D7DFCA7926D1F46300B38244 /* TestFramework.framework */,
 				B2EEBCBE20DCE27B00BFEC4C /* FundationListTableViewController.h */,
 				B2EEBCBF20DCE27B00BFEC4C /* FundationListTableViewController.m */,
 				B28111AB20DA1DD200D149F8 /* Main.storyboard */,
@@ -475,6 +482,7 @@
 		B2A0CABE20DB7F8D0001AAC8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D7D4688D26BFD3E10002CAF5 /* off-screenRendered */,
 				B2B14E8B2145FDDD00671C55 /* ReactCocoa */,
 				B23C113A212BFAFB000FBE07 /* ImageView */,
 				B2D57152210849290083A9A9 /* ScrollView */,
@@ -604,6 +612,15 @@
 				B2FC259F20E242A5009B859D /* CustomObjectCopyViewController.xib */,
 			);
 			path = Copy;
+			sourceTree = "<group>";
+		};
+		D7D4688D26BFD3E10002CAF5 /* off-screenRendered */ = {
+			isa = PBXGroup;
+			children = (
+				D7D4688E26BFD4440002CAF5 /* OffScreenRenderedViewController.h */,
+				D7D4688F26BFD4440002CAF5 /* OffScreenRenderedViewController.m */,
+			);
+			path = "off-screenRendered";
 			sourceTree = "<group>";
 		};
 		DB41B789D2F52D4E45AB88C1 /* Frameworks */ = {
@@ -826,6 +843,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A4028B20E0E94B0001CC7B /* FMDBLearnViewController.m in Sources */,
+				D7D4689026BFD4440002CAF5 /* OffScreenRenderedViewController.m in Sources */,
 				B2EEBCC020DCE27B00BFEC4C /* FundationListTableViewController.m in Sources */,
 				B2A0CAD420DB8CFA0001AAC8 /* responseView2.m in Sources */,
 				B299DC26212E8E8D009A59C0 /* ImageModel.m in Sources */,
@@ -978,7 +996,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1030,7 +1048,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1043,11 +1061,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZR83DY963;
+				DEVELOPMENT_TEAM = ALGXZHD7T7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/learnOCItem",
+				);
 				INFOPLIST_FILE = learnOCItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"$(SRCROOT)/TestFramework.framework\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shanghaiDouke.com.learnOCItem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1061,11 +1091,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZR83DY963;
+				DEVELOPMENT_TEAM = ALGXZHD7T7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/learnOCItem",
+				);
 				INFOPLIST_FILE = learnOCItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FMDB\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage\"",
+					"\"$(SRCROOT)/TestFramework.framework\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shanghaiDouke.com.learnOCItem;
 				PRODUCT_NAME = "$(TARGET_NAME)";

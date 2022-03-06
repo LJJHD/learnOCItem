@@ -12,6 +12,7 @@
 #import "ComposeImageTableViewController.h"
 #import "ReactCocoaViewController.h"
 #import "ImageViewStretchViewController.h"
+#import "OffScreenRenderedViewController.h"
 static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 @interface UIKitListTableViewController ()
 @property (nonatomic, strong) NSArray *vcArr;
@@ -21,7 +22,7 @@ static NSString * const cellIdentyfiy = @"defaultTableViewCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.vcArr = @[@"KVO",@"ScrollViewController",@"ComposeImageTableViewController",@"reactCocoa",@"ImageViewStretchViewController"];
+    self.vcArr = @[@"KVO",@"ScrollViewController",@"ComposeImageTableViewController",@"reactCocoa",@"ImageViewStretchViewController",@"OffScreenRenderedViewController"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentyfiy];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
